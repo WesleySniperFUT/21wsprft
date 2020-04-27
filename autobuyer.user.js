@@ -2,7 +2,6 @@
 // @name         FUT20 Autobuyer
 // @namespace    http://tampermonkey.net/
 // @version      0.6
-// @updateURL    https://github.com/oRastor/fut20-web-app/raw/master/autobuyer.user.js
 // @description  try to take over the world!
 // @author       Rastor
 // @match        https://www.easports.com/uk/fifa/ultimate-team/web-app/*
@@ -131,7 +130,7 @@
     window.buyPlayer = function(player, price) {
         services.Item.bid(player, price).observe(this, (function(sender, data){
             if (data.success) {
-                writeToLog(player._staticData.firstName + ' ' + player._staticData.lastName + ' [' + player._auction.tradeId + '] ' + price + ' buyed');
+                writeToLog(player._staticData.firstName + ' ' + player._staticData.lastName + ' [' + player._auction.tradeId + '] ' + price + ' bought');
                 var sellPrice = parseInt(jQuery('#ab_sell_price').val());
                 if (sellPrice !== 0) {
                     writeToLog(' -- Selling for: ' + sellPrice);
