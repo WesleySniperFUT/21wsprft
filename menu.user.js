@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         FUT20 Autobuyer Menu
+// @name         WesleySniper Menu FUT21
 // @namespace    http://tampermonkey.net/
 // @version      0.6
 // @description  try to take over the world!
